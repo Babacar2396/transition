@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  position: relative;
+  color: black;
+  background-color: gray;
+  display: block;
+  font-size: 100px;
+   text-transform: uppercase;
+  text-decoration: none;
+  margin: 40px 0;
+  border: 2px solid white;
+  padding: 20px 60px;
+  overflow: hidden;
+  /* transition: 2s all ease; */
+}
+.btn::before{
+  content: "Hove";
+  position: absolute;
+  top: 0;
+  left: -5.5rem;
+  width: 60%;
+  height: 160px;
+  background-color: black;
+  transition-duration: .1s;
+  transition-timing-function: cubic-bezier(0,.22,1,.99) ;
+   font-size: 100px;
+   color: white;
+   text-transform: uppercase;
+   text-align: end;
+}
+.btn::after{
+  content: " rable";
+  position: absolute;
+  top: 0;
+  right: -3.5rem;
+  width: 60%;
+  height: 160px;
+  background-color: black;
+  transition-duration: .1s;
+  transition-timing-function: cubic-bezier(0,.22,1,.99) ;
+  font-size: 100px;
+  color: white;
+  text-transform: uppercase;
+}
+.btn:hover::before{
+  height: 0px;
+  margin-top: 4rem;
+  margin-left: -22rem;
+  font-size: 0px;
+}
+.btn:hover::after{
+  height: 0px;
+  margin-top: 4rem;
+  margin-right: -24rem;
+  font-size: 0px;
+}
